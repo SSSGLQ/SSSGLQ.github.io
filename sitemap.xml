@@ -2,7 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/12/14/hello-world/</loc>
+    <loc>https://sssglq.github.io/2019/12/15/test/</loc>
+    
+    <lastmod>2019-12-14T16:54:05.870Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sssglq.github.io/2019/12/14/post/</loc>
+    
+    <lastmod>2019-12-14T15:58:24.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sssglq.github.io/page/index.html</loc>
+    
+    <lastmod>2019-12-14T15:50:39.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sssglq.github.io/2019/12/14/hello-world/</loc>
     
     <lastmod>2019-12-14T13:01:02.351Z</lastmod>
     

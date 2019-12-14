@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Malone Jau&#39;s Blog</title>
   
-  
+  <subtitle>get progress day by day</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-12-14T13:01:02.351Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://sssglq.github.io/"/>
+  <updated>2019-12-14T16:54:05.870Z</updated>
+  <id>https://sssglq.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Malone Jau</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test</title>
+    <link href="https://sssglq.github.io/2019/12/15/test/"/>
+    <id>https://sssglq.github.io/2019/12/15/test/</id>
+    <published>2019-12-14T16:14:18.000Z</published>
+    <updated>2019-12-14T16:54:05.870Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><ul><li>刚建好博客，接下来将专心写博客，分享学习心得</li><li>next 主题暂时配不上，先用着默认的主题</li><li>觉得写得好的，可以动动手分享给其他人</li><li>添加图片 <img src="https://github.com/SSSGLQ/SSSGLQ.github.io/blob/master/picture/panda.jpg?raw=true" alt="panda"></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;刚建好博客，接下来将专心写博客，分享学习心得&lt;/li&gt;
+&lt;li&gt;next 主题暂时配不上，先用着默认的主题&lt;/li&gt;
+&lt;li&gt;觉
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>post</title>
+    <link href="https://sssglq.github.io/2019/12/14/post/"/>
+    <id>https://sssglq.github.io/2019/12/14/post/</id>
+    <published>2019-12-14T15:49:44.000Z</published>
+    <updated>2019-12-14T15:58:24.609Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一篇随笔"><a href="#第一篇随笔" class="headerlink" title="第一篇随笔"></a>第一篇随笔</h3><ul><li>内容不限，技术、摄影、篮球、旅游，欢迎一起交流</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;第一篇随笔&quot;&gt;&lt;a href=&quot;#第一篇随笔&quot; class=&quot;headerlink&quot; title=&quot;第一篇随笔&quot;&gt;&lt;/a&gt;第一篇随笔&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;内容不限，技术、摄影、篮球、旅游，欢迎一起交流&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/12/14/hello-world/"/>
-    <id>http://yoursite.com/2019/12/14/hello-world/</id>
+    <link href="https://sssglq.github.io/2019/12/14/hello-world/"/>
+    <id>https://sssglq.github.io/2019/12/14/hello-world/</id>
     <published>2019-12-14T13:01:02.350Z</published>
     <updated>2019-12-14T13:01:02.351Z</updated>
     
