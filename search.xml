@@ -4,7 +4,20 @@
   
     
     <entry>
-      <title>PhotographyTutorial1</title>
+      <title>Hexo NexT 主题添加评论和文章阅读量</title>
+      <link href="/2019/12/24/readCountAndComment/"/>
+      <url>/2019/12/24/readCountAndComment/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>折腾了畅言、gitalk、disqus 这些评论 API，最后都以失败告终，最终试到 valine 的时候终于成功，顺便把文章阅读量统计也搞定了。下面把我的经验写下来分享给大家，欢迎评论。</p><h3 id="Valine-介绍"><a href="#Valine-介绍" class="headerlink" title="Valine 介绍"></a><a href="https://valine.js.org" target="_blank" rel="noopener">Valine</a> 介绍</h3><p>Valine - 一款快速、简洁高效的无后端评论系统。</p><p>NexT 主题已经集成了 Valine 评论系统，只要填写一些参数即可使用。</p><h3 id="配置-LeanCloud"><a href="#配置-LeanCloud" class="headerlink" title="配置 LeanCloud"></a>配置 <a href="https://leancloud.cn" target="_blank" rel="noopener">LeanCloud</a></h3><h4 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h4><p>打开 <a href="https://leancloud.cn" target="_blank" rel="noopener">LeanCloud 官网</a>，进入注册页面进行注册。完成邮箱激活后，登录进入 <code>控制台</code> 页面，如下图：</p><p><img src="http://q2vfud0dr.bkt.clouddn.com/LeanCloud.JPG" alt=""></p><h4 id="创建新应用"><a href="#创建新应用" class="headerlink" title="创建新应用"></a>创建新应用</h4><p>创建一个新应用，类型为 JavaScript SDK，点击应用进入。创建名称为 Counter 的 Class，必须是 Counter，否则不能用。</p><h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>编辑主题目录下的 <code>_config.yml</code> 文件，修改如下：</p><p><img src="http://q2vfud0dr.bkt.clouddn.com/commet.JPG" alt=""></p><p><img src="http://q2vfud0dr.bkt.clouddn.com/valine.JPG" alt=""></p><p>appid 和 appkey 在 LeanCloud 的应用里 <code>设置 - 应用 Keys</code> 可以找到，复制粘贴即可。可顺便在 <code>安全中心</code> 中添加 <code>Web 安全域名</code>，填上自己博客的网址，保存即可。</p><h3 id="重新部署博客"><a href="#重新部署博客" class="headerlink" title="重新部署博客"></a>重新部署博客</h3><p>重新部署博客，即可看到配置的效果。</p><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>[1] <a href="http://www.jeyzhang.com/hexo-next-add-post-views.html#comments" target="_blank" rel="noopener">Hexo的NexT主题个性化：添加文章阅读量</a></p><p>[2] <a href="https://notes.doublemine.me/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="noopener">为NexT主题添加文章阅读量统计功能</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Photography Tutorial 1</title>
       <link href="/2019/12/21/PhotographyTutorial1/"/>
       <url>/2019/12/21/PhotographyTutorial1/</url>
       
@@ -17,7 +30,7 @@
     
     
     <entry>
-      <title>TourOfTibet(西藏旅游)</title>
+      <title>Tour Of Tibet(西藏旅游)</title>
       <link href="/2019/12/15/TourOfTibet/"/>
       <url>/2019/12/15/TourOfTibet/</url>
       
