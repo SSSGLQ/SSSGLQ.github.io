@@ -194,7 +194,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-28 15:56:40 / Modified: 17:39:56" itemprop="dateCreated datePublished" datetime="2019-12-28T15:56:40+08:00">2019-12-28</time>
+              <time title="Created: 2019-12-28 15:56:40 / Modified: 23:52:06" itemprop="dateCreated datePublished" datetime="2019-12-28T15:56:40+08:00">2019-12-28</time>
             </span>
 
           
@@ -238,6 +238,13 @@
 <h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p><code>faced</code> 是实现了 <code>FaceService</code> 使用的 <code>Face 1.0 HIDL</code> 接口的 Linux 可执行文件，其注册自己为 <code>IBiometricsFace@1.0</code> 以便 <code>FaceService</code> 可以找到它。</p>
 <h4 id="IDL"><a href="#IDL" class="headerlink" title="IDL"></a>IDL</h4><p>讲 HIDL 之前先讲讲 IDL，因为后面还会出现 AIDL，所以先做点知识储备，以防不时之需。</p>
 <p>IDL 全称 interface description language 或者 interface definition language，是一种用于描述软件组件的应用编程接口的规范语言。IDLs 通过一种语言独立的方式描述接口，使得软件组件之间的通信不用共享同一种编程语言，例如在那些用 C++ 编写的程序和用 Java 编写的程序之间的通信。</p>
+<p>IDLs 常被用于远程过程调用软件。这些情况在连接的两端的机器可能使用不同的操作系统和计算机语言。IDLs 为两个不同的操作系统提供了一座桥梁。</p>
+<h4 id="HIDL"><a href="#HIDL" class="headerlink" title="HIDL"></a>HIDL</h4><p>HAL 即 Hardware Abstract Layer，全称硬件抽象层。HAL 接口定义语言或者 HIDL 是一种指定一个 HAL 和它的使用者之间的接口的接口定义语言（IDL）。它允许指定收集到接口和包中的类型和方法调用。更广泛地，HIDL 是一个用于可能被独立编译的代码库之间的通信系统。</p>
+<p>HIDL 旨在用于跨进程通信（IPC）。进程间的通信被称为绑定（Binderized）。对于必须链接到一个进程的库，直通模式也是可用的（不支持 Java）。</p>
+<p>HIDL 指定数据结构和方法签名，这些结构和方法签名以收集到包中的接口（类似于类）进行组织。虽然 C++ 和 Java 编程者使用一组不同的关键字，但是 HIDL 的语法看起来很熟悉。HIDL 也使用 Java 风格的注解。</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p>[1] <a href="https://source.android.com/security/biometric/face-authentication" target="_blank" rel="noopener">Face Authentication HIDL</a></p>
+<p>[2] <a href="https://en.wikipedia.org/wiki/Interface_description_language" target="_blank" rel="noopener">Interface description language</a></p>
+<p>[3] <a href="https://source.android.com/devices/architecture/hidl#header" target="_blank" rel="noopener">HIDL</a></p>
 
       
     </div>
