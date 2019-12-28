@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>人脸解锁从底层到上层（一）</title>
+      <link href="/2019/12/28/FaceAuthenticationOne/"/>
+      <url>/2019/12/28/FaceAuthenticationOne/</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本系列将探索 Android 原生人脸解锁，从底层介绍到上层，涉及底层硬件、驱动、系统服务、框架、应用、跨进程通信、接口定义语言等知识。欢迎和我一起探讨，指出我的错误或不足，完善该系列，帮助更多有需要的人。</p><h3 id="人脸解锁概述"><a href="#人脸解锁概述" class="headerlink" title="人脸解锁概述"></a>人脸解锁概述</h3><p>人脸解锁即用户通过注视设备的正面方便地解锁手机或平板。Android 10 为支持人脸解锁的设备在人脸认证期间添加了一个新的可以安全处理相机帧、保持隐私与安全的人脸认证栈的支持，也为安全合规地启用集成交易的应用（网上银行或其他服务）提供了一种容易实现的方式。</p><p>Android 原生的人脸认证栈在 Android 10 是一种新的实现，与 Android P 不一样了。新的实现介绍了 <code>IBiometricsFace.hal</code> ，<code>IBiometricsFaceClientCallback.hal</code> 和 <code>types.hal</code> 这些接口。</p><h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><p>这里要说到 <code>BiometricsPrompt</code> 这个 API，它囊括了 Android 所有生物识别，包括人脸、指纹、虹膜。人脸 HAL 与如下组件进行交互（HAL 全称硬件抽象层）：</p><p><img src="http://q2vfud0dr.bkt.clouddn.com/biometricStack.png" alt="生物认证栈"></p><p>可以看到，通过 <code>FingerprintManager</code> 实现支持库和系统服务之间的通信在 Android P 被废弃了，在 Android 10 或者更高的版本通过 <code>BiometricManager</code> 实现支持库和系统服务之间的通信，系统服务和驱动以及硬件通信，打通从底层到上层，从而实现人脸解锁。<code>BiometricManager</code>、 <code>BiometricService</code> 对应到人脸解锁分别使用 <code>FaceManager</code>、 <code>FaceService</code>，驱动及硬件实现规定为 <code>faced</code>。</p><h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p><code>faced</code> 是实现了 <code>FaceService</code> 使用的 <code>Face 1.0 HIDL</code> 接口的 Linux 可执行文件，其注册自己为 <code>IBiometricsFace@1.0</code> 以便 <code>FaceService</code> 可以找到它。</p><h4 id="IDL"><a href="#IDL" class="headerlink" title="IDL"></a>IDL</h4><p>讲 HIDL 之前先讲讲 IDL，因为后面还会出现 AIDL，所以先做点知识储备，以防不时之需。</p><p>IDL 全称 interface description language 或者 interface definition language，是一种用于描述软件组件的应用编程接口的规范语言。IDLs 通过一种语言独立的方式描述接口，使得软件组件之间的通信不用共享同一种编程语言，例如在那些用 C++ 编写的程序和用 Java 编写的程序之间的通信。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo NexT 主题添加评论和文章阅读量</title>
       <link href="/2019/12/24/readCountAndComment/"/>
       <url>/2019/12/24/readCountAndComment/</url>
