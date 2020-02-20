@@ -200,7 +200,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-21 00:56:43" itemprop="dateModified" datetime="2020-02-21T00:56:43+08:00">2020-02-21</time>
+                <time title="Modified: 2020-02-21 01:02:00" itemprop="dateModified" datetime="2020-02-21T01:02:00+08:00">2020-02-21</time>
               </span>
 
           
@@ -254,16 +254,15 @@
 <p><img src="https://img-blog.csdnimg.cn/20200221000645226.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="登录成功"></p>
 <h3 id="搭建-v2ray-服务端"><a href="#搭建-v2ray-服务端" class="headerlink" title="搭建 v2ray 服务端"></a>搭建 v2ray 服务端</h3><p>接下来在 XShell 里输入命令搭建 v2ray 服务端。</p>
 <p><code>bash &lt;(curl -s -L https://git.io/v2ray.sh)</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl</span><br><span class="line">ubuntu&#x2F;debian 系统安装 Curl 方法: apt-get update -y &amp;&amp; apt-get install curl -y</span><br><span class="line">centos 系统安装 Curl 方法: yum update -y &amp;&amp; yum install curl -y</span><br><span class="line">安装好 curl 之后就能安装脚本了</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl</span><br><span class="line">ubuntu&#x2F;debian 系统安装 Curl 方法: &#96;apt-get update -y &amp;&amp; apt-get install curl -y&#96;</span><br><span class="line">centos 系统安装 Curl 方法: &#96;yum update -y &amp;&amp; yum install curl -y&#96;</span><br><span class="line">安装好 curl 之后就能安装脚本了</span><br></pre></td></tr></table></figure>
 
 <p>然后选择<code>安装</code>，即输入 1 然后回车；<br>选择传输协议，如果没有特殊需求，使用默认的 TCP 传输协议即可，直接回车；<br>选择端口，如果没有特殊需求，使用默认端口即可，直接回车；<br>是否屏蔽广告，不屏蔽，直接回车即可。</p>
 <p>然后就可以看到 v2ray 的配置信息，输入 <code>v2ray qr</code> 还可以生成二维码链接，如下图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20200221002943855.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="v2ray 配置信息"></p>
 <p>现在就可以测试一下，是否能正常使用了。</p>
 <p><strong>最重要一步</strong>，一定记得开端口，不然你会发现无法科学上网。</p>
-<p><code>#centos 开端口的方法
-firewall-cmd --zone=public --add-port=端口号/tcp --permanent
-firewall-cmd --reload</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#centos 开端口的方法</span><br><span class="line">firewall-cmd --zone&#x3D;public --add-port&#x3D;端口号&#x2F;tcp --permanent</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
 <h3 id="下载-v2ray-客户端配置科学上网"><a href="#下载-v2ray-客户端配置科学上网" class="headerlink" title="下载 v2ray 客户端配置科学上网"></a>下载 v2ray 客户端配置科学上网</h3><p>如果你用的是 v2rayN，直接扫描二维码然后连接服务器即可，现在你就可以科学上网了。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200221002626421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="科学上网"></p>
 <p><a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">v2ray各平台客户端下载地址</a></p>
@@ -271,7 +270,7 @@ firewall-cmd --reload</code></p>
 <p><a href="https://apps.apple.com/cn/app/kitsunebi/id1275446921" target="_blank" rel="noopener">v2ray iOS客户端下载地址</a>，找不到可在 App Store 自行搜索。</p>
 <p><a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener">Android v2rayNG 下载地址</a></p>
 <p><img src="https://img-blog.csdnimg.cn/2020022100433028.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="Android 客户端"></p>
-<p>下面我演示一下 Windows 客户端的使用，打开图示应用，然后在打开的应用图标处右键，扫描屏幕上的二维码即可。</p>
+<p>下面我演示一下 Windows 客户端的使用，打开图示应用，把上面生成的二维码链接在浏览器打开，然后在打开的应用图标处右键，扫描屏幕上的二维码即可。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200221005010559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="v2rayN 使用"></p>
 <p><img src="https://img-blog.csdnimg.cn/20200221005156730.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="客户端上的服务器"></p>
 <p><img src="https://img-blog.csdnimg.cn/20200221005331973.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMzAyNTY3,size_16,color_FFFFFF,t_70" alt="编辑信息"></p>
